@@ -33,13 +33,13 @@
 </template>
 <script>
 export default {
-  data() {
-    retutn {
-      login: '',
-      password: ''
-    }
-  }
-}
+  // data: function () {
+  //   retutn {
+  //     login: '',
+  //     password: ''
+  //   }
+  // }
+};
 </script>
 <style scoped>
 main .container {

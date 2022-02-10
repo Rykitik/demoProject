@@ -29,6 +29,24 @@
               </p>
             </div>
           </div>
+          <div class="card" style="width: 18rem">
+            <img src="../assets/house.jpg" class="card-img-top" alt="img" />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img src="../assets/house.jpg" class="card-img-top" alt="img" />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -40,5 +58,6 @@ main .container {
 }
 .card {
   margin-right: 15px;
+  margin-bottom: 15px;
 }
 </style>
