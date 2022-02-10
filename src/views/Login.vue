@@ -31,6 +31,16 @@
     </main>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    retutn {
+      login: '',
+      password: ''
+    }
+  }
+}
+</script>
 <style scoped>
 main .container {
   padding-top: 60px;

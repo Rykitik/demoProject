@@ -2,20 +2,32 @@ import Vue from "vue";
 import Vuex from "vuex";
 
 Vue.use(Vuex);
+
 export default new Vuex.Store({
   state: {
-    isViewMenu: true,
-    isViewAuth: false
+    orders: [],
+    users: [
+      {
+        id: 0,
+        login: "admin",
+        password: "admin",
+        role: 1
+      }
+    ]
   },
   mutations: {
-    changeViewMenu(state) {
-      state.isViewMenu = !state.isViewMenu;
+    addOrder(state, order) {
+      state.orders.push(order);
     },
-    changeViewAuth(state) {
-      state.isViewAuth = !state.isViewAuth;
+    addUser(state, { login, password }) {
+      let lastID = state.users.length;
+      state.users.push({
+        id: lastID,
+        login: login,
+        password: password,
+        role: 0
+      });
     }
   },
-  actions: {},
-  modules: {},
-  plugins: []
+  actions: {}
 });
