@@ -8,6 +8,11 @@ const routes = [
     path: "/",
     name: "mainPage",
     component: MainPage
+  },
+  {
+    path: "/login",
+    name: "Login",
+    component: () => import("@/views/Login.vue")
   }
 ];
 const router = new VueRouter({
