@@ -1,8 +1,8 @@
 <template lang ="pug">
 #app.h-100
-  MainPage
-  Footer
   Header
+  router-view
+  Footer
 </template>
 
 <script>
